@@ -1,5 +1,15 @@
 $(function() {
 
+   $('input[name="phone"]').mask("+7 (999) 999-9999");
+
+	//Плавная прокрутка до якоря
+	$("a[href^='#']").click(function () {
+		elementClick = $(this).attr("href")
+		destination = $(elementClick).offset().top - 40;
+		$("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 500);
+		return false;
+	});
+
 	//slider_testimonials
 	var options = {
 		$SlideDuration: 600,
@@ -13,13 +23,6 @@ $(function() {
 	var slider_portfolio = new $JssorSlider$("slider_portfolio", options);
 	var slider_company = new $JssorSlider$("slider_company", options);
 
-
-	//SVG Fallback
-	if(!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function() {
-			return $(this).attr("src").replace(".svg", ".png");
-		});
-	};
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
