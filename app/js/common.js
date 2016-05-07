@@ -1,5 +1,19 @@
 $(function() {
 
+	//slider_testimonials
+	var options = {
+		$SlideDuration: 600,
+		$SlideEasing: $Jease$.$Linear,
+		$SlideWidth: 160,
+		$Cols: 4,
+		$ArrowNavigatorOptions: {
+		  $Class: $JssorArrowNavigator$
+		}
+	};
+	var slider_portfolio = new $JssorSlider$("slider_portfolio", options);
+	var slider_company = new $JssorSlider$("slider_company", options);
+
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {

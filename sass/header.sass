@@ -5,9 +5,66 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.6
-	font-family: "RobotoRegular", sans-serif
+	line-height: 1.3
+	font-family: $lr
 	overflow-x: hidden
+	color: #fff
 
 .hidden
 	display: none
+
+.container
+    width: 1170px !important
+.nav-list 
+	list-style-type: none
+	margin: 0
+	padding: 0
+	display: flex
+	justify-content: space-between
+	padding: 10px 0
+.nav-list__item
+	font-size: 20px
+	font-family: $mr
+	display: inline-block
+	border-right: 2px solid
+	padding-right: 80px
+	line-height: 1
+	color: $green
+	&:last-child
+		padding-right: 0
+		border: none
+
+
+.section
+	position: relative
+.section_vector 
+	background-image: url(../img/bg-vector.jpg)
+	padding-bottom: 80px
+	background-size: cover
+.bg-man
+	position: absolute
+	bottom: 0
+	left: 50%
+	margin-left: -700px
+.hgroup
+	text-transform: uppercase
+.hgroup__date 
+	font-size: 90px
+	margin: 35px 0 15px
+	font-family: $mb
+h1
+	font-size: 25px
+	color: $green
+	margin: 0
+h2
+	font-size: 90px
+	color: $green
+	font-family: $mb
+	line-height: 1
+	margin: 0
+	span
+		color: $white
+.hgroup__descr
+	font-size: 25px
+	padding-left: 125px
+	margin-top: 50px

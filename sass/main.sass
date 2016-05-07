@@ -5,29 +5,388 @@
 @import "app/libs/animate/animate.sass"
 
 *::-webkit-input-placeholder
-	color: #666
+	color: $blue
+	font-family: $lr
 	opacity: 1
 
 *:-moz-placeholder
-	color: #666
+	color: $blue
+	font-family: $lr
 	opacity: 1
 
 *::-moz-placeholder
-	color: #666
+	color: $blue
+	font-family: $lr
 	opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
+	color: $blue
+	font-family: $lr
 	opacity: 1
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #666
+	color: $blue
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+	color: $blue
 
-//Custom Styles Here
+
+
+// АВТОР
+.section_author
+	padding: 20px 0 30px
+.title-author
+	font-size: 36px
+	text-transform: uppercase
+	font-family: $mr
+.section_green
+	background: $green
+.bg-man-2
+	position: absolute
+	left: 50%
+	margin-left: -600px
+	bottom: 50px
+	border-bottom: 3px solid #fff
+	padding: 0 20px 0 90px
+.list-author
+	font-size: 22px
+	padding-left: 20px
+	margin-top: 0
+	li
+		margin-bottom: 10px
+
+
+
+// ИСТОРИЯ
+.section_bg-light
+	color: $black
+.title-history
+	font-size: 44px
+	text-transform: uppercase
+	font-family: $lb
+	color: $blue
+	margin-top: 130px
+	margin-bottom: 40px
+.colbs-history
+	position: absolute
+	top: 79px
+	left: 50%
+	margin-left: -1400px
+.bg_light
+	padding: 50px 0 35px
+	background: $bg-light
+	color: $black
+.history__panel
+	border: 2px solid $blue
+	color: $blue
+	padding: 0 15px
+.t-bold
+	font-family: $lb
+.colbs-blue
+	position: absolute
+	bottom: 0
+	right: 32px
+.history__panel_p
+	float: left
+	width: 50%
+
+
+
+// ОТЗЫВ
+.section_bg-light
+	background: $bg-light
+	color: $black
+.title_recall
+	text-transform: uppercase
+	color: $blue
+	font-size: 74px
+	font-family: $lb
+	position: relative
+	z-index: 2
+	margin-bottom: -35px
+	margin-top: 2px
+.section_recall
+	margin-top: 7px 
+	padding-top: 42px
+	padding-bottom: 55px
+	span
+		font-family: $lb
+.recall-round
+	background: #fff
+	width: 210px
+	height: 210px
+	border-radius: 50%
+	position: relative
+	z-index: 0
+	margin-left: 20px
+.photo-recall
+	position: absolute
+	left: 50px
+	top: 65px
+	z-index: 3
+.recall-name
+	font-size: 20px
+	font-family: $lb
+	margin-top: 15px
+	margin-bottom: 0
+.recall-descr
+	font-size: 20px
+	line-height: 1
+	margin-top: 5px
+
+
+
+// ПРОГРАММА
+.bg_blue
+	background: $blue
+	color: $white
+.section_programm
+	padding-bottom: 50px
+	span
+		font-family: $lb
+		color: $green
+		display: block
+		font-size: 20px
+.title-programm
+	font-family: $lb
+	font-size: 55px
+	text-transform: uppercase
+	color: $green
+	margin-top: 40px
+	margin-bottom: 0px
+.programm-panel-2
+	margin-top: 30px
+
+
+
+// СЛАЙДЕРЫ
+.section_sliders
+	padding-bottom: 13px
+.slider-label
+	font-size: 23px
+	color: $blue
+	font-family: $lb
+	margin-top: 42px
+	text-transform: uppercase
+.slider-label_small
+	margin-top: 57px
+.jssora22l, .jssora22r
+	background-image: url(../img/slider-arrows.png)
+	width: 28px
+	height: 53px
+	display: block
+	position: absolute
+	cursor: pointer
+.jssora22r
+	background-position: -28px 0
+
+
+
+// ДЛЯ КОГО
+.section_for
+	padding: 30px 0
+	span
+		display: block
+		font-family: $lb
+		font-size: 20px
+		color: $green
+.title_for
+	color: $green
+	text-transform: uppercase
+	font-size: 24px
+	font-family: $lb
+.big-loop
+	width: 100%
+
+
+
+// 10 ПРИЧИН
+.section_ten
+	background-image: url(../img/bg-ten.png)
+	background-size: cover
+	color: $blue
+	padding-top: 75px
+.img-ten-reason
+	margin: 0 auto 30px
+.reason_item
+	font-size: 20px 
+	font-family: $lb
+.descr_reason
+	font-family: $lr
+	font-size: 16px
+	color: $black
+	margin-top: 0
+.title_reason
+	margin-bottom: 0
+div.reason_item
+	padding-left: 40px
+.long-reason
+	position: absolute
+	bottom: -70px
+	left: 50%
+	margin-left: -1126px
+.top-pos
+	position: relative
+	z-index: 5
+
+
+
+// ЕСЛИ
+.section_if
+	margin-top: 70px	
+	background: $green
+	padding-bottom: 40px	
+	padding-top: 20px	
+.title_if
+	font-size: 55px
+	font-family: $lb
+	margin-bottom: 0
+	line-height: 1
+	text-transform: uppercase
+.man-if
+	position: absolute
+	bottom: 0
+	left: 50%
+	margin-left: -630px
+.descr_if
+	font-size: 22px
+.btn
+	display: inline-block
+	padding: 14px 25px 11px
+	text-transform: uppercase
+	background: $blue
+	color: #fff
+	font-family: $lb
+	border: none
+	&:hover, &:focus
+		text-decoration: none
+		color: #fff
+.btn_big
+	float: right
+	font-size: 24px
+	margin-right: 60px
+.btn_small
+	line-height: 56px
+	padding-top: 0
+	padding-bottom: 0
+	margin-top: 12px
+
+
+
+// ЦЕНЫ
+.section_price
+	padding-top: 110px
+	padding-bottom: 50px
+.price-template
+	margin: 0 auto
+	display: block
+.price-title
+	font-size: 55px
+	font-family: $lb
+	text-transform: uppercase
+	position: absolute
+	left: 50%
+	margin-left: -610px
+	top: 30px
+.price-cost
+	position: absolute
+	font-size: 55px
+	font-family: $mb
+.price-date
+	position: absolute
+	font-size: 28px
+.price-cost_first
+	top: 176px
+	left: 50%
+	margin-left: -400px 
+.price-date_first
+	top: 244px
+	left: 50%
+	margin-left: -400px 
+.price-cost_second
+	top: 112px
+	left: 50%
+	margin-left: -88px 
+.price-date_second
+	top: 181px
+	left: 50%
+	margin-left: -84px 
+.price-cost_third
+	top: 113px
+	right: 50%
+	margin-right: -342px
+.price-date_third
+	right: 50%
+	margin-right: -391px
+	top: 177px
+.pattern
+	height: 13px
+	background-image: url(../img/pattern.png)
+
+
+
+// РЕГИСТРАЦИЯ
+.section_form
+	padding-top: 80px
+.bg-man-3
+	position: absolute
+	left: 50%
+	margin-left: -1950px
+form
+	color: $blue
+	border: 2px solid $blue
+	padding: 0 0 17px
+.title_form
+	font-size: 32px
+	font-family: $lb
+.form-row
+	font-size: 19px
+	font-family: $lb
+	margin: 5px 0
+	line-height: 2.5
+	padding: 0 10px
+.form-row_line
+	border-bottom: 2px solid $blue
+	text-align: center
+	margin-bottom: 18px
+	line-height: 62px
+form
+	input:not([type="submit"])
+		margin-bottom: 12px
+		border: 1px solid $blue
+		font-size: 18px
+		font-family: $lb
+		padding: 10px
+		line-height: 1.3
+		width: 100%
+		color: $blue
+
+
+
+// ФУТЕР
+footer
+	background: #E8F1F6
+	margin-top: 112px
+	padding-bottom: 50px
+.bg-footer
+	position: absolute
+	bottom: 0
+	left: 50%
+	margin-left: -620px
+.footer__title
+	font-size: 36px
+	font-family: $lb
+	color: $blue
+.footer__descr
+	font-size: 20px
+	color: #000
+	span
+		font-family: $lb
+	a
+		color: #000
+
+
 
 
 //ALWAYS END
