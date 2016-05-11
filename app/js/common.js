@@ -26,17 +26,15 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
+	$("form").submit(function() {
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
+			url: "mail.php",
+			data: $(this).serialize()
 		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
+			alert("Спасибо за заявку! Мы свяжемся с Вами в ближайшее время.");
+			setTimeout(function() {				
+				$("form").trigger("reset");
 			}, 1000);
 		});
 		return false;

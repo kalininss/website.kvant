@@ -3,7 +3,7 @@
 
 body
 	font-size: 16px
-	min-width: 1200px
+	min-width: 1170px
 	position: relative
 	line-height: 1.3
 	font-family: $lr
@@ -13,10 +13,11 @@ body
 .hidden
 	display: none
 
+
 .container
 	width: 1170px !important
 .nav_fixed
-	position: fixed
+	position: fixed !important
 	top: 0
 	left: 0
 	z-index: 99
@@ -34,7 +35,7 @@ body
 	font-size: 20px
 	font-family: $mr
 	display: inline-block
-	border-right: 2px solid
+	border-right: 2px solid $green
 	padding-right: 80px
 	line-height: 1
 	&:last-child
@@ -42,6 +43,7 @@ body
 		border: none
 	a
 		color: $green
+		display: inline-block
 		&:hover, &:focus
 			text-decoration: none
 			color: $green
@@ -49,6 +51,7 @@ body
 
 .section
 	position: relative
+	overflow-x: hidden
 .section_vector 
 	background-image: url(img/bg-vector.jpg)
 	padding-bottom: 80px
