@@ -21,6 +21,15 @@ $(function() {
 		}
 	};
 	var slider_portfolio = new $JssorSlider$("slider_portfolio", options);
+	var options = {
+		$SlideDuration: 600,
+		$SlideEasing: $Jease$.$Linear,
+		$SlideWidth: 213,
+		$Cols: 3,
+		$ArrowNavigatorOptions: {
+		  $Class: $JssorArrowNavigator$
+		}
+	};
 	var slider_company = new $JssorSlider$("slider_company", options);
 
 
@@ -32,6 +41,7 @@ $(function() {
 			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function() {
+			yaCounter37304795.reachGoal('mainTarget');
 			alert("Спасибо за заявку! Мы свяжемся с Вами в ближайшее время.");
 			setTimeout(function() {				
 				$("form").trigger("reset");
