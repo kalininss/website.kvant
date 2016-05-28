@@ -1,6 +1,6 @@
 $(function() {
 
-   $('input[name="phone"]').mask("+7 (999) 999-9999");
+  //$('input[name="phone"]').mask("+7 (999) 999-9999");
 
 	//Плавная прокрутка до якоря
 	$("a[href^='#']").click(function () {
@@ -17,7 +17,8 @@ $(function() {
 		$SlideWidth: 160,
 		$Cols: 4,
 		$ArrowNavigatorOptions: {
-		  $Class: $JssorArrowNavigator$
+		  $Class: $JssorArrowNavigator$,
+		  $ChanceToShow: 2
 		}
 	};
 	var slider_portfolio = new $JssorSlider$("slider_portfolio", options);
@@ -27,10 +28,12 @@ $(function() {
 		$SlideWidth: 213,
 		$Cols: 3,
 		$ArrowNavigatorOptions: {
-		  $Class: $JssorArrowNavigator$
+		  $Class: $JssorArrowNavigator$,
+		  $ChanceToShow: 2
 		}
 	};
 	var slider_company = new $JssorSlider$("slider_company", options);
+	var slider_partners = new $JssorSlider$("slider_partners", options);
 
 
 	//E-mail Ajax Send
